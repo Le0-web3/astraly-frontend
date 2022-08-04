@@ -119,7 +119,7 @@ const BuyPageContainer = () => {
           </div>
           <div className="block h-fit">
             <div className="block--contrast">
-              <div className="title--medium mt-1">Trade $ASTR on other DEXs</div>
+              <div className="mt-1 title--medium">Trade $ASTR on other DEXs</div>
             </div>
             <div className="block__item">
               <a href="https://testnet.app.alpharoad.fi/" target="_blank" rel="noreferrer">
@@ -133,9 +133,9 @@ const BuyPageContainer = () => {
         </div>
 
         <div className="block">
-          <div className="block--contrast flex flex-col items-center">
-            <div className="title--medium mt-1">Trade NFT Lottery!</div>
-            <div className="title--small mt-1">You can buy and sell NFT lottery tickets!</div>
+          <div className="flex flex-col items-center block--contrast">
+            <div className="mt-1 title--medium">Trade NFT Lottery!</div>
+            <div className="mt-1 title--small">You can buy and sell NFT lottery tickets!</div>
             <img src={LotteryTicket.src} alt="lottery-ticket" width="250" />
           </div>
           <div className="block__item">

@@ -34,7 +34,7 @@ const Item = ({ icon, label, href }: { icon: React.ReactNode; label: string; hre
   return (
     <>
       <a href={href} target="__blank">
-        <div className="flex items-center ui-t-primaryClear cursor-pointer">
+        <div className="flex items-center cursor-pointer ui-t-primaryClear">
           <div className="icon mr-2 transform -translate-y-0.5">{icon}</div>
 
           <div className="text">{label}</div>
@@ -50,11 +50,11 @@ const FooterIndex = () => {
     <footer className="FooterIndex ui-page-block">
       <FooterCTA />
 
-      <div className="g-container pt-24">
-        <div className="grid md:grid-cols-4 lg:grid-cols-5 justify-center gap-y-10 text-center md:text-left">
-          <div className="logo md:col-span-4 lg:col-span-1 flex justify-center lg:block">
+      <div className="pt-24 g-container">
+        <div className="grid justify-center text-center md:grid-cols-4 lg:grid-cols-5 gap-y-10 md:text-left">
+          <div className="flex justify-center logo md:col-span-4 lg:col-span-1 lg:block">
             <Link href="/">
-              <div className="logo flex items-center cursor-pointer">
+              <div className="flex items-center cursor-pointer logo">
                 <img src={Logo} height="54" width="54" alt="Astraly logo" />
               </div>
             </Link>
@@ -93,15 +93,15 @@ const FooterIndex = () => {
           </div>
         </div>
 
-        <div className="separator mt-20">
+        <div className="mt-20 separator">
           <Horizontal />
         </div>
 
-        <div className="footer py-8 flex items-center flex-col md:flex-row gap-y-10">
+        <div className="flex flex-col items-center py-8 footer md:flex-row gap-y-10">
           <div className="theme-switcher"></div>
           <div className="copyright md:mr-auto">© {year} Astraly Labs, Inc.</div>
 
-          <div className="social flex gap-8 md:gap-14 flex-wrap">
+          <div className="flex flex-wrap gap-8 social md:gap-14">
             {Links.map(([icon, label, href]) => (
               <Item
                 icon={icon}

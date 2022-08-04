@@ -4,7 +4,7 @@
   line-height: 1.31;
   background: linear-gradient(360deg, #7e1aff 0%, #9f24ff 50%);
   box-shadow: 0 20px 35px rgba(55, 0, 99, 0.2);
-  border-radius: 16px;
+  border-radius: 8px;
   gap: 10px;
   height: 55px;
   span {
@@ -31,7 +31,8 @@
     height: calc(100% + 4px);
     width: calc(100% + 4px);
     background: linear-gradient(360deg, #9f24ff 0%, #7e1aff 50%);
-    border-radius: 18px;
+    border-radius: 8px;
+    box-shadow: -0.2em 0.2em 0.6em 0.1em #370063, 0 0 0.1em 0.1em #9d69de; 
   }
 
   &::after {
@@ -44,8 +45,9 @@
     height: 100%;
     width: 100%;
     background: linear-gradient(360deg, #9f24ff 0%, #7e1aff 50%);
-    border-radius: 18px;
+    border-radius: 8px;
     opacity: 0;
+    box-shadow: -0.2em 0.2em 0.6em 0.1em #370063, 0 0 0.1em 0.1em #9d69de; 
   }
 
   &.baseButtonSmall {
@@ -56,6 +58,7 @@
     span {
       top: 0;
     }
+    box-shadow: -0.2em 0.2em 0.6em 0.1em #370063, 0 0 0.1em 0.1em #9d69de; 
   }
 
   &.baseButtonXSmall {
@@ -66,6 +69,7 @@
     span {
       top: 0;
     }
+    box-shadow: -0.2em 0.2em 0.6em 0.1em #370063, 0 0 0.1em 0.1em #9d69de; 
   }
 
   &.baseButtonDisabled {
@@ -129,10 +133,12 @@
   &:hover {
     &::after {
       opacity: 1;
+      box-shadow: -0.2em 0.2em 0.5em 0em #8f00ff, -0.2em 0.2em 0.2em 0.2em #161616; 
     }
 
     &::before {
       background: linear-gradient(360deg, #7e1aff 0%, #9f24ff 50%);
+      box-shadow: -0.2em 0.2em 0.5em 0em #8f00ff, -0.2em 0.2em 0.2em 0.2em #161616;
     }
 
     .baseButtonIcon {
